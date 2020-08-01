@@ -1,0 +1,56 @@
+body {
+  margin: 0px;
+}
+
+a:visited {
+  color: #b2a5ff;
+}
+
+a {
+  color: #e2daff;
+}
+
+.row {
+  width: 100%;
+}
+
+.about {
+  color: white;
+  overflow: auto;
+}
+
+.about h1 {
+  font-family: "Work Sans";
+  font-size: 40px;
+  margin: 0px;
+}
+
+.about ul {
+  list-style-type: none;
+  list-style-position: outside;
+  padding: 0px;
+}
+
+.about li {
+  font-family: "Karla";
+  font-size: 20px;
+  line-height: 40px;
+}
+
+.about img {
+  margin: 20px 50px;
+  max-height: 300px;
+}
+
+.about strong {
+  color: #b2a5ff
+}
+
+.about {
+  width: 60%;
+  margin: auto;
+}
+
+.about-text {
+  padding: 50px;
+}
