@@ -1,18 +1,110 @@
 body {
   margin: 0px;
+  font-family: "Work Sans";
+}
+   
+h1 {
+  font-family: "Work Sans";
+  font-size: 40px;
+  margin: 0px;
 }
 
-a:visited {
-  color: #b2a5ff;
+p {
+  font-size: 20px;
+  font-family: "Karla";
 }
 
-a {
-  color: #e2daff;
+.navbar {
+  background-color: black;
+  color: white;
+  overflow: auto;
+  display: flex;
+  align-items: center;
+}
+
+.navbar h1 {
+  float: left;
+  flex: 1;
+  margin-left: 20px;
+}
+
+.navbar ul {
+  list-style-type: none;
+  overflow: hidden;
+  background-color: black;
+  margin: 0px;
+  padding: 0px;
+}
+
+.navbar li {
+  float: left;
+}
+
+.navbar li a {
+  display: block;
+  color: white;
+  padding: 20px;
+  font-family: "Quicksand";
+  font-weight: 500;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.navbar li a:hover {
+  background-color: slateblue;
+}
+
+.intro {
+  color: white;
+  background-color: darkslateblue;
+  padding: 50px;
+}
+
+.projects {
+  padding: 0px 50px;
+}
+
+.projects img {
+  height: 300px;
+  display: block;
+  margin: auto;
+}
+
+.projects .grid {
+  display: grid;
+  grid-gap: 20px;
+  margin: 20px 0px;
+  border-radius: 5px;
+}
+
+.projects .grid.three-col {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.projects .grid.two-col {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.projects .grid-item h2 {
+  margin: 0px;
+}
+
+.projects .grid-item {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  padding: 30px;
+  text-align: center;
+}
+
+.about a:visited {
+  color: #DDDCFF;
+}
+
+.about a {
+  color: #dddddd;
 }
 
 .row {
   width: 100%;
-
 }
 
 .about {
@@ -20,36 +112,28 @@ a {
   width: 60%;
   margin: auto;
   display: flex;
-  justify-content: center;
   align-items: center;
 }
 
 .about img {
-  max-height: 300px;
+  width: 20%;
+  max-width: 300px;
 }
 
-.about-left {
+.about.left {
   flex-direction: row;
 }
 
-.about-left img {
+.about.left img {
   margin: 20px 50px 20px 0px;
 }
 
-.about-right {
+.about.right {
   flex-direction: row-reverse;
 }
 
-.about-right img {
+.about.right img {
   margin: 20px 0px 20px 50px;
-}
-
-
-
-.about h1 {
-  font-family: "Work Sans";
-  font-size: 40px;
-  margin: 0px;
 }
 
 .about ul {
@@ -65,9 +149,43 @@ a {
 }
 
 .about strong {
-  color: #b2a5ff
+  color: #BCB9F3;
 }
 
 .about-text {
-  margin: 20px 50px;
+  margin: 50px;
+}
+
+@media screen and (max-width: 1500px) {
+  .about {
+    width: 80%;
+  }
+  .projects .grid {
+    grid-template-columns: auto auto;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .about {
+    width: 90%;
+  }
+  .about img {
+    width: 50%;
+  }
+  .about.left {
+    flex-direction: column;
+  }
+  .about.right {
+    flex-direction: column;
+  }
+  .about.left img {
+    margin: 20px;
+  }
+  .about.right img {
+    margin: 30px;
+  }
+  .projects .grid {
+    display: flex;
+    flex-direction: column;
+  }
 }
