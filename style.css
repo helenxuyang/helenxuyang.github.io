@@ -62,9 +62,10 @@ p {
 
 .projects {
   padding: 0px 50px;
+  background-color: #fbfbfb;
 }
 
-.projects img {
+.grid-item img {
   height: 300px;
   display: block;
   margin: auto;
@@ -93,6 +94,7 @@ p {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   padding: 30px;
   text-align: center;
+  background-color: white;
 }
 
 .about a:visited {
@@ -187,5 +189,8 @@ p {
   .projects .grid {
     display: flex;
     flex-direction: column;
+  }
+  .projects img {
+    width: 90%;
   }
 }
