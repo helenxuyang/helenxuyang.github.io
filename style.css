@@ -168,6 +168,13 @@ p {
 }
 
 @media screen and (max-width: 800px) {
+  .navbar {
+    flex-direction: column;
+    overflow: hidden;
+  }
+  .navbar h1 {
+    margin: 10px;
+  }
   .about {
     width: 90%;
   }
@@ -190,7 +197,8 @@ p {
     display: flex;
     flex-direction: column;
   }
-  .projects img {
-    width: 90%;
+  .projects .grid-item img {
+    width: 100%;
+    height: auto;
   }
 }
