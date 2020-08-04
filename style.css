@@ -65,8 +65,8 @@ p {
   background-color: #fbfbfb;
 }
 
-.grid-item img {
-  height: 300px;
+.projects .grid-item img {
+  width: 100%;
   display: block;
   margin: auto;
 }
@@ -175,6 +175,7 @@ p {
   .navbar h1 {
     margin: 10px;
   }
+  
   .about {
     width: 90%;
   }
@@ -193,6 +194,7 @@ p {
   .about.right img {
     margin: 30px;
   }
+  
   .projects .grid {
     display: flex;
     flex-direction: column;
@@ -200,5 +202,8 @@ p {
   .projects .grid-item img {
     width: 100%;
     height: auto;
+  }
+  .projects .grid-item h2 {
+    width: 100%;
   }
 }
