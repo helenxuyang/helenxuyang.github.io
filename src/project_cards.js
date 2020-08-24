@@ -11,7 +11,6 @@ class ProjectCard extends React.Component {
           alt={this.props.alt}>
         </img>
         <a href={this.props.repo} class={'button'}>GitHub</a>
-        <a href={this.props.more} class={'button'}>More info</a>
       </div>
     );
   }

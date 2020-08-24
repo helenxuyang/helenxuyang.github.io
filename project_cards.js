@@ -40,11 +40,6 @@ var ProjectCard = function (_React$Component) {
           'a',
           { href: this.props.repo, 'class': 'button' },
           'GitHub'
-        ),
-        React.createElement(
-          'a',
-          { href: this.props.more, 'class': 'button' },
-          'More info'
         )
       );
     }
