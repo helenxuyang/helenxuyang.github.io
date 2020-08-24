@@ -169,6 +169,10 @@ p {
   margin: 50px;
 }
 
+.resume body {
+  margin: 30px;
+}
+
 @media screen and (max-width: 1500px) {
   .about {
     width: 80%;

@@ -5,21 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="style.css">
   <link href='https://fonts.googleapis.com/css?family=Noto Sans|Quicksand|Karla|Work Sans|Roboto' rel='stylesheet'>
-
   <title>helen.xu.yang</title>
   <meta charset="UTF-8">
 
 </head>
 
 <body>
-  <div class="navbar">
-    <h1>helen.xu.yang</h1>
-    <ul>
-      <li><a href="index.html">HOME</a></li>
-      <li><a href="about.html">ABOUT ME</a></li>
-      <li><a href="projects.html">PROJECTS</a></li>
-    </ul>
-  </div>
+  <div id="navbar"></div>
+
   <div class="intro">
     <h1>Hi, I'm Helen!</h1>
     <p>I'm a CS student at Cornell ('23), and I'm hoping to learn more about creating impactful and accessible tech!</p>
@@ -34,7 +27,11 @@
       <div id="card_stomach"></div>
       <div id="card_website"></div>
     </div>
-    <hr>
+    <h2>Cornell DTI</h2>
+    <p>I'm a Flutter developer on the Carriage team of Cornell Design & Tech Initiative!</p>
+    <div class="grid two-col">
+
+    </div>
     <h1 style="margin-top: 50px">Past projects:</h1>
     <h2>High school</h2>
     <p>I took two CS classes in high school: AP Computer Science A (CSA) in my junior year, and Advanced Object-Oriented
@@ -47,13 +44,11 @@
     </div>
   </div>
 
-  <!-- Load React. -->
-  <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
   <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
   <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
 
-  <!-- Load our React component. -->
   <script src="project_cards.js"></script>
+  <script src="navbar.js"></script>
 </body>
 
 </html>

@@ -1,48 +1,48 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link href='https://fonts.googleapis.com/css?family=Noto Sans|Quicksand|Karla|Work Sans' rel='stylesheet'>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href='https://fonts.googleapis.com/css?family=Noto Sans|Quicksand|Karla|Work Sans' rel='stylesheet'>
 </head>
+
 <body>
-  <div class="navbar">
-    <h1>helen.xu.yang</h1>
-    <ul>
-      <li><a href="index.html">HOME</a></li>
-      <li><a href="about.html">ABOUT ME</a></li>
-      <li><a href="projects.html">PROJECTS</a></li>
-    </ul>
-  </div>
+  <div id="navbar"></div>
+
   <div class="row" style="background-color: #4732A9">
     <div class="about left">
-      <img src="images/me.png" alt="Pixel drawing of me with glasses, black hair in a ponytail, and a small smile" align="left">
+      <img src="images/me.png" alt="Pixel drawing of me" align="left">
       <div class="about-text">
         <h1>Hi, I'm Helen!</h1>
         <ul>
           <li>&#8227; <strong>CS student</strong> at Cornell University (College of Engineering '23)</li>
-          <li>&#8227; <strong>Flutter dev</strong> on the <a href="https://github.com/cornell-dti/carriage-driver" target="_blank">Carriage</a> team in <a href="https://cornelldti.org" target="_blank">Cornell Design & Tech Initiative</a></li>
+          <li>&#8227; <strong>Flutter dev</strong> on the <a href="https://github.com/cornell-dti/carriage-driver"
+              target="_blank">Carriage</a> team in <a href="https://cornelldti.org" target="_blank">Cornell Design &
+              Tech Initiative</a></li>
           <li>&#8227; <strong>Research intern</strong> at the Enhancing Ability Lab at Cornell Tech</li>
-          <li>&#8227; Hoping to learn how to create <strong>impactful</strong> and <strong>accessible</strong> tech!</li>
+          <li>&#8227; Hoping to learn how to create <strong>impactful</strong> and <strong>accessible</strong> tech!
+          </li>
         </ul>
       </div>
     </div>
   </div>
-  
+
   <div class="row" style="background-color: #271289">
     <div class="about right">
-      <img src="images/tech.png" alt="Pixel drawing of a phone with a cloud and rainbow lockscreen, a computer with a window that says 'Hello World!', and a tablet with a subtitled video." align="right">
+      <img src="images/tech.png" alt="Pixel drawing of a phone, computer, and tablet." align="right">
       <div class="about-text">
         <h1>Interests</h1>
         <ul>
           <li>&#8227; <strong>Mobile app dev:</strong> cross-platform development with Flutter</li>
-          <li>&#8227; <strong>Web dev:</strong> learning HTML/CSS, this website is my first project :)</li>
+          <li>&#8227; <strong>Web dev:</strong> learning HTML/CSS and React, this website is my first project :)</li>
           <li>&#8227; <strong>Accessibility & assistive tech:</strong> new to the field but eager to learn!</li>
+          <li>&#8227; <strong>HCI:</strong> hoping to learn how to develop user-centered tech!</li>
         </ul>
       </div>
     </div>
   </div>
-  
+
   <div class="row" style="background-color: #16055A">
     <div class="about left">
       <img src="images/contact.png" alt="Pixel drawing of Gmail, LinkedIn, and GitHub logos">
@@ -50,11 +50,18 @@
         <h1>Contact</h1>
         <ul>
           <li>&#8227; <strong>Email:</strong> <a href="mailto:helen.xu.yang@gmail.com">helen.xu.yang@gmail.com</a></li>
-          <li>&#8227; <strong>GitHub:</strong> <a href="https://github.com/helenxuyang" target="_blank">github.com/helenxuyang</a></li>
-          <li>&#8227; <strong>LinkedIn:</strong> <a href="https://linkedin.com/in/helenxuyang" target="_blank">linkedin.com/in/helenxuyang</a></li>
+          <li>&#8227; <strong>GitHub:</strong> <a href="https://github.com/helenxuyang"
+              target="_blank">github.com/helenxuyang</a></li>
+          <li>&#8227; <strong>LinkedIn:</strong> <a href="https://linkedin.com/in/helenxuyang"
+              target="_blank">linkedin.com/in/helenxuyang</a></li>
         </ul>
       </div>
     </div>
   </div>
+
+  <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+  <script src="navbar.js"></script>
 </body>
+
 </html>
