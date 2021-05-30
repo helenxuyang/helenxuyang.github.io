@@ -1,0 +1,12 @@
+#home {
+  font-family: "Work Sans";
+}
+
+.home-section {
+  padding: 24px;
+}
+
+#home-intro {
+  color: white;
+  background-color: darkslateblue;
+}

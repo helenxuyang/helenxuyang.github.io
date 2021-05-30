@@ -1,0 +1,54 @@
+.navbar {
+  background-color: black;
+  color: white;
+  overflow: auto;
+  display: flex;
+  align-items: center;
+  margin: 0px;
+}
+
+.navbar h1 {
+  color: white;
+  float: left;
+  flex: 1;
+  margin-left: 20px;
+  font-family: "Work Sans";
+  font-size: 40px;
+  margin: 8px 24px;
+}
+
+.navbar ul {
+  list-style-type: none;
+  overflow: hidden;
+  background-color: black;
+  margin: 0px;
+  padding: 0px;
+}
+
+.navbar li {
+  float: left;
+}
+
+.navbar li a {
+  display: block;
+  color: white;
+  padding: 20px;
+  font-family: "Quicksand";
+  font-weight: 500;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.navbar li a:hover {
+  background-color: slateblue;
+}
+
+@media screen and (max-width: 800px) {
+  .navbar {
+    flex-direction: column;
+    overflow: hidden;
+  }
+  .navbar h1 {
+    margin: 16px;
+  }
+}
