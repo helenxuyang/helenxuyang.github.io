@@ -25,8 +25,14 @@ const ProjectCardGrid = (props: ProjectCardGridProps) => {
 const Home = () => {
   return <div id="home">
     <div id="home-intro" className="home-section">
+      <div id="home-intro-text">
       <p className="intro-title">Hi, I'm Helen!</p>
-      <p>I'm a CS student at Cornell University ('23). I'm interested in creating useful, fun, and accessible tech!</p>
+      <p>I'm a CS student at Cornell University ('23). I primarily have experience with frontend web/mobile development with React and Flutter. I'm interested in creating useful, fun, and accessible tech!</p>
+      <p>Outside of work, you'll find me learning American Sign Language, dropping my Chinese yoyo many times, and playing multiplayer Tetris :)</p>
+      <a href="https://www.linkedin.com/in/helenxuyang/">LinkedIn</a>
+      {" | "}
+      <a href="https://github.com/helenxuyang">GitHub</a>
+      </div>
     </div>
     <div id="projects" className="home-section">
       <h2 id="projects-header">Projects</h2>

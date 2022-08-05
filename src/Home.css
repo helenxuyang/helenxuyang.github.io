@@ -11,6 +11,10 @@
   background-color: darkslateblue;
 }
 
+#home-intro-text {
+  max-width: 600px;
+}
+
 #projects-header {
   font-size: 32px;
 }
@@ -18,4 +22,8 @@
 h3 {
   font-size: 28px;
   color: darkslateblue;
+}
+
+a {
+  color: whitesmoke;
 }
