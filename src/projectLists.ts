@@ -6,7 +6,7 @@ import questodoPreview from './images/preview_questodo.jpg';
 import rummikubPreview from './images/preview_rummikub.jpg';
 import sudokuPreview from './images/preview_sudoku.jpg';
 import tetrisPreview from './images/preview_tetris.jpg';
-import websitePreview from './images/preview_website.png';
+import thirstyPreview from './images/preview_thirsty.png';
 import blogsPreview from './images/preview_blogs.png';
 import letquizPreview from './images/preview_letquiz.png';
 import scribePreview from './images/preview_scribe.jpg';
@@ -23,7 +23,7 @@ export const currentProjects: Project[] = [
       description: "A website for Science Olympiad at Cornell tournament management and scoring that I'm developing with a partner. Very much a WIP but we're hoping to see it live by this fall!",
       date: "June 2022 - Present",
       image: libePreview,
-      altText: "",
+      altText: "Homepage for a tournament showing teams and events",
     }
   ];
   
@@ -33,7 +33,7 @@ export const currentProjects: Project[] = [
         description: "Game Design Initiative at Cornell 2022 Showcase Most Innovative Winner: A wholesome 2D platformer where you play as Cupid, shooting arrows to climb and stun enemies to reunite two lovers. I created a level editor using Java Swing, implemented Cupid's animations, and created UI screens including the main menu and level selection screen.",
         date: "January 2022 - May 2022",
         image: plumePreview,
-        altText: "",
+        altText: "Platformer where Cupid aims an arrow at a sheep enemy",
         otherLinks: new Map([
             ['Try it out!', 'https://gdiac.cs.cornell.edu/temp/showcase/gallery/plume/']
         ])
@@ -43,7 +43,7 @@ export const currentProjects: Project[] = [
       description: "My project team while I was on the Cornell Design and Tech Initiative! Carrige is a set of Flutter and React mobile/web apps to support CULift, Cornell's paratransit service for students with disabilities. I primarily worked on the rider/driver apps, including testing for and ensuring screenreader accessibility using TalkBack.",
       date: "Spring 2020 - August 2021",
       image: carriagePreview,
-      altText: "A mobile phone showing a schedule of CULift rides from the Carriage driver app",
+      altText: "A schedule of CULift rides from the Carriage driver app",
       repoURL: "https://github.com/cornell-dti/carriage-driver/",
       otherLinks: new Map([
         ['DTI Project', 'https://www.cornelldti.org/projects/carriage/']
@@ -54,11 +54,8 @@ export const currentProjects: Project[] = [
       description: "Trends in Web Dev partner project: A multi-user blog where users can create, upvote, and filter text posts by author, keywords, and tags",
       date: "December 2020",
       image: blogsPreview,
-      altText: "The main page of CUBlogs with posts filtered to posts with the author 'Jeremy'",
+      altText: "Main CUBlogs page with posts filtered to posts with the author 'Jeremy'",
       repoURL: "https://github.com/triple-jay/trendsfinalproject",
-      otherLinks: new Map([
-        ['Try it out!', 'https://cu-blogs.herokuapp.com/'],
-      ])
     },
     {
       name: "LetQuiz",
@@ -72,6 +69,16 @@ export const currentProjects: Project[] = [
   
   export const hackathonProjects: Project[] = [
     {
+      name: "Thirsty",
+      description: "Big Red Hacks submission: A Flutter app to help Cornell students locate and rate waterbottle refill stations on campus",
+      date: "October 2022",
+      image: thirstyPreview,
+      altText: "Map showing water fountain locations with info about the fountain in Caldwell Hall",
+      otherLinks: new Map([
+        ['DevPost', 'https://devpost.com/software/thirsty-xifz3h']
+      ])
+    },
+    {
         name: "Scribe",
         description: "TechTogether Seattle submission: A web app that connects users with visual/hearing impairments to Microsoft Azure AI or sighted/hearing volunteers for describing or transcribing images, audio, and videos",
         date: "January 2021",
@@ -84,7 +91,7 @@ export const currentProjects: Project[] = [
       description: "Technica 2020, Best Product IoT Hack 2nd Place Winner: A React app that turns your to do list into boss battle quests.",
       date: "October 2020",
       image: questodoPreview,
-      altText: "",
+      altText: "List of quests including 'Math HW' and 'Clean my room' with corresponding difficulties and book-shaped boss avatars",
       repoURL: "https://github.com/helenxuyang/technica_2020",
       otherLinks: new Map([
         ['DevPost', 'https://devpost.com/software/questodo'],
@@ -95,7 +102,7 @@ export const currentProjects: Project[] = [
       description: "DTI Hackathon 2020, Peoples' Choice Winner: A Flutter app for helping college students find recipes based on the ingredients and utensils they have with a fun Tinder-style interface",
       date: "September 2020",
       image: shefPreview,
-      altText: "",
+      altText: "Tinder-style card for a quesadilla recipe",
       repoURL: "https://github.com/helenxuyang/dti_hackathon_2020",
     },
     {
@@ -103,7 +110,7 @@ export const currentProjects: Project[] = [
       description: "Hack Our Campus 2020, Mental Health Category Winner: A Flutter app for creating virtual hangouts with automatically generated Google Meet calls to help students stay connected more easily during the remote semester",
       date: "August 2020",
       image: linkedPreview,
-      altText: "",
+      altText: "Profile, Schedule, Discover, and Event pages from Linked",
       repoURL: "https://github.com/helenxuyang/linked",
     },
   ];
@@ -114,7 +121,7 @@ export const currentProjects: Project[] = [
       description: "A Flutter app that generates a random workout from a list of exercises, made in hopes of forcing myself to exercise more (spoiler: it didn't work)",
       date: "Summer 2020",
       image: exercisePreview,
-      altText: "",
+      altText: "'Ready to work out today?' header with a button that says Grind NEVER stops with copious amounts of emojis",
       repoURL: "https://github.com/helenxuyang/exercise_generator",
     },
     {
@@ -122,7 +129,7 @@ export const currentProjects: Project[] = [
       description: "A Flutter app for tracking food and symptoms to help with identifying possible food intolerances. Unfinished, but I hope to continue working on it!",
       date: "Summer 2020",
       image: insAndOutsPreview,
-      altText: "",
+      altText: "Card showing a lunch of watermelon, ramen, and green beans",
       repoURL: "https://github.com/helenxuyang/ins-and-outs",
     }
   ]
@@ -141,7 +148,7 @@ export const currentProjects: Project[] = [
       description: "AOOD group project: a Sudoku game made for our teacher, who was our client as I lead a team of 7 students to walk through the professional software development process",
       date: "Winter-Spring 2019",
       image: sudokuPreview,
-      altText: "Our Sudoku game interface",
+      altText: "Sudoku game interface",
       repoURL: "https://github.com/helenxuyang/Sudoku",
     },
     {

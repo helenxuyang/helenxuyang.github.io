@@ -3,7 +3,7 @@
 }
 
 .home-section {
-  padding: 24px;
+  padding: 48px;
 }
 
 #home-intro {
@@ -12,16 +12,7 @@
 }
 
 #home-intro-text {
-  max-width: 600px;
-}
-
-#projects-header {
-  font-size: 32px;
-}
-
-h3 {
-  font-size: 28px;
-  color: darkslateblue;
+  max-width: 800px;
 }
 
 a {
