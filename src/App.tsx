@@ -2,7 +2,7 @@ import "./App.css";
 import Navigation from "./Navigation";
 import { Switch, Route, BrowserRouter as Router } from "react-router-dom";
 import Home from "./Home";
-import Blog from "./Blog";
+// import Blog from "./Blog";
 
 function App() {
   return (
@@ -10,9 +10,9 @@ function App() {
       <Router>
         <Navigation />
         <Switch>
-          <Route path="/blog">
+          {/* <Route path="/blog">
             <Blog />
-          </Route>
+          </Route> */}
           <Route path="/">
             <Home />
           </Route>

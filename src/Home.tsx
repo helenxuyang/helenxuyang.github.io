@@ -8,9 +8,7 @@ const Home = () => {
         <div id="home-intro-text">
           <p className="intro-title">Hi, I'm Helen!</p>
           <p>
-            I'm a CS student at Cornell University ('23). I primarily have
-            experience with frontend web/mobile development with React and
-            Flutter. I'm interested in creating useful, fun, and accessible
+            Hello! My name is Helen. I graduated from Cornell University in 2023 and am now a frontend software developer with an interest in web/app development and accessibility. I primarily have experience with React and Flutter. I'm interested in creating useful, fun, and accessible
             tech!
           </p>
           <p>

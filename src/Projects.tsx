@@ -1,5 +1,4 @@
 import {
-  currentProjects,
   collegeProjects,
   hackathonProjects,
   personalProjects,
@@ -11,8 +10,7 @@ import React from "react";
 const Projects = () => {
   return (
     <div id="projects" className="home-section">
-      <ProjectCardGrid title="Current Projects" projects={currentProjects} />
-      <ProjectCardGrid title="School Projects" projects={collegeProjects} />
+      <ProjectCardGrid title="College Projects" projects={collegeProjects} />
       <ProjectCardGrid
         title="Hackathon Projects"
         projects={hackathonProjects}
