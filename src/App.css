@@ -11,5 +11,5 @@ body {
 }
 
 :focus {
-  outline: 4px solid orange;
+  outline: 3px solid black;
 }

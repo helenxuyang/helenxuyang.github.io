@@ -14,40 +14,107 @@ import plumePreview from "./assets/images/preview_plume.png";
 import linkedPreview from "./assets/images/preview_linked.png";
 import shefPreview from "./assets/images/preview_shef.png";
 import exerciseBingoPreview from "./assets/images/preview_exercise_bingo.png";
+import sciolyMatcherPreview from "./assets/images/preview_scioly_matcher.png";
+import avianTelemetryPreview from "./assets/images/preview_avian_telem.png";
+import scavengerWalkPreview from "./assets/images/preview_scavenger_walk.png";
 
 import type { Project } from "./projectTypes";
 
 export const recentPersonalProjects: Project[] = [
   {
-    name: "Science Olympiad Event Matcher",
-    description:
-      "A React site I made for Science Olympiad at Cornell to match students to events more easily",
-    date: "March 2023 - Sept 2024",
-    imageSrc: "",
-    altText: "",
+    name: "Scavenger Walk",
+    description: [
+      "A simple web app that turns a walk into a scavenger hunt",
+      "I threw this together in an attempt to get myself to go touch grass. It's intended to be Wordle-style where you get a new board every day, and currently just uses local storage.",
+      "I plan to combine it with Exercise Bingo and other fitness activities into a larger project someday!",
+      "Future plans: Ideally I'd like this to work offline and potentially count steps or track distance walked as well, so I'm thinking about remaking it in a mobile project.",
+    ],
+    date: "July 2025",
+    imageSrc: scavengerWalkPreview,
+    altText: "A list of items to find on a scavenger hunt",
     links: [
       {
         name: "GitHub",
-        url: "",
+        url: "https://github.com/helenxuyang/scavenger-walk",
       },
       {
         name: "Try it out!",
-        url: "",
+        url: "https://scavenger-walk.vercel.app/",
       },
     ],
+    technologies: ["React", "TypeScript"],
+  },
+  {
+    name: "Exercise Bingo",
+    description: [
+      "A web app that gamifies exercising by turning a workout into a randomized bingo board",
+      "I created this in an attempt to get myself to exercise more. I plan to combine it with Scavenger Walk and other fitness activities into a larger project someday!",
+      "Future plans: I'd also like to make this more mobile-friendly...I haven't thought of a great way to fit an interactive 5x5 grid in a small viewport with good UX yet!",
+    ],
+    date: "June 2025",
+    imageSrc: exerciseBingoPreview,
+    altText: "A bingo board where each square is a different exercise",
+    links: [
+      {
+        name: "GitHub",
+        url: "https://github.com/helenxuyang/bingo-workout",
+      },
+      {
+        name: "Try it out!",
+        url: "https://bingo-workout.vercel.app/",
+      },
+    ],
+    technologies: ["React", "TypeScript"],
+  },
+  {
+    name: "Science Olympiad Event Matcher",
+    description: [
+      "A web app created for Science Olympiad at Cornell club to match students to events based on preference surveys",
+      'I designed the auto-assign algorithm which takes into account "popularity" (some events are rated highly by many students) and "pickiness" (some students only want to be considered for a few specific events).',
+      "I also designed the UI to support convenient manual assignments, featuring a drag-and-drop UI with color-coding to show preferences.",
+      "Future plans: I'd like to keep improving the algorithm and make the UI more friendly for users who are color blind or use keyboard nav.",
+    ],
+    date: "March 2023 - Sept 2024",
+    imageSrc: sciolyMatcherPreview,
+    altText: "A row of a table of the Science Olympiad Event Matcher GUI",
+    links: [
+      {
+        name: "GitHub",
+        url: "http://github.com/helenxuyang/scioly_event_matcher",
+      },
+      {
+        name: "Try it out!",
+        url: "https://scioly-event-matcher.vercel.app/",
+      },
+    ],
+    technologies: ["React", "TypeScript"],
   },
   {
     name: "Colossal Avian Telemetry GUI",
-    description: "PyQT GUI for Colossal Avian, a 30lb combat robot",
+    description: [
+      "Telemetry GUI for Colossal Avian, a 30lb combat robot",
+      "My partner Matthew, builder and driver of Colossal Avian, asked me to build a GUI for their robot's telemetry system. The latest iteration uses a custom extension of the progress bar component for an intuitive UI that can be understood amidst chaotic robot fighting.",
+      "Future plans: I'm hoping to keep improving the UX and add a feature to import and view previous data.",
+    ],
     date: "April 2024",
-    imageSrc: "",
-    altText: "",
+    imageSrc: avianTelemetryPreview,
+    altText:
+      "Colossal Avian telemetry GUI showing temperature, RPM, current, and consumption",
     links: [
       {
         name: "GitHub",
         url: "https://github.com/helenxuyang/avian_telemetry",
       },
+      {
+        name: "Colossal Avian",
+        url: "https://mjzhang4.github.io/colossalavian.html",
+      },
+      {
+        name: "Telemetry System",
+        url: "https://mjzhang4.github.io/doc/ECE%20395%20Final%20Report.pdf",
+      },
     ],
+    technologies: ["PYQT", "Python"],
   },
 ];
 
@@ -58,13 +125,14 @@ export const collegeProjects: Project[] = [
       "Game Design Initiative at Cornell 2022 Showcase Most Innovative Winner: A wholesome 2D platformer where you play as Cupid, shooting arrows to climb and stun enemies to reunite two lovers. I created a level editor using Java Swing, implemented Cupid's animations, and created UI screens including the main menu and level selection screen.",
     date: "January 2022 - May 2022",
     imageSrc: plumePreview,
-    altText: "Platformer where Cupid aims an arrow at a sheep enemy",
+    altText: "Platformer game where Cupid aims an arrow at a sheep enemy",
     links: [
       {
         name: "Try it out!",
         url: "https://gdiac.cs.cornell.edu/temp/showcase/gallery/plume/",
       },
     ],
+    technologies: ["LibGDX", "Java"],
   },
   {
     name: "Carriage",
@@ -83,6 +151,7 @@ export const collegeProjects: Project[] = [
         url: "https://github.com/cornell-dti/carriage-rider/",
       },
     ],
+    technologies: ["Flutter", "Dart"],
   },
   {
     name: "CUBlogs",
@@ -91,13 +160,14 @@ export const collegeProjects: Project[] = [
     date: "December 2020",
     imageSrc: blogsPreview,
     altText:
-      "Main CUBlogs page with posts filtered to posts with the author 'Jeremy'",
+      "CUBlogs home page with posts filtered to posts with the author 'Jeremy'",
     links: [
       {
         name: "GitHub",
         url: "https://github.com/triple-jay/trendsfinalproject",
       },
     ],
+    technologies: ["React", "TypeScript", "Firestore"],
   },
   {
     name: "LetQuiz",
@@ -112,6 +182,7 @@ export const collegeProjects: Project[] = [
         url: "https://github.com/mly32/flashcard-app-hack-challenge",
       },
     ],
+    technologies: ["Flask", "Python"],
   },
 ];
 
@@ -130,6 +201,7 @@ export const hackathonProjects: Project[] = [
         url: "https://devpost.com/software/thirsty-xifz3h",
       },
     ],
+    technologies: ["Flutter", "Firestore"],
   },
   {
     name: "Scribe",
@@ -145,6 +217,7 @@ export const hackathonProjects: Project[] = [
         url: "https://github.com/helenxuyang/tts_2021",
       },
     ],
+    technologies: ["React", "TypeScript", "Microsoft Azure"],
   },
   {
     name: "quesTodo",
@@ -164,6 +237,7 @@ export const hackathonProjects: Project[] = [
         url: "https://devpost.com/software/questodo",
       },
     ],
+    technologies: ["React", "TypeScript"],
   },
   {
     name: "shef",
@@ -178,6 +252,7 @@ export const hackathonProjects: Project[] = [
         url: "https://github.com/helenxuyang/dti_hackathon_2020",
       },
     ],
+    technologies: ["Flutter", "Firestore"],
   },
   {
     name: "Linked",
@@ -192,73 +267,42 @@ export const hackathonProjects: Project[] = [
         url: "https://github.com/helenxuyang/linked",
       },
     ],
+    technologies: ["Flutter", "Firestore"],
   },
 ];
 
 export const personalProjects: Project[] = [
   {
-    name: "Scavenger Hunt Walk",
-    description:
-      "A React prototype for a little game where you search for randomized items along your walk",
-    date: "July 2025",
-    imageSrc: "",
-    altText: "",
-    links: [
-      {
-        name: "GitHub",
-        url: "https://github.com/helenxuyang/scavenger-walk",
-      },
-      {
-        name: "Try it out!",
-        url: "https://scavenger-walk.vercel.app/",
-      },
-    ],
-  },
-  {
-    name: "Exercise Bingo",
-    description: "",
-    date: "June 2025",
-    imageSrc: exerciseBingoPreview,
-    altText: "",
-    links: [
-      {
-        name: "GitHub",
-        url: "https://github.com/helenxuyang/bingo-workout",
-      },
-      {
-        name: "Try it out!",
-        url: "https://bingo-workout.vercel.app/",
-      },
-    ],
-  },
-  {
     name: "Exercise Generator",
     description:
-      "A Flutter app that generates a random workout from a list of exercises, made in hopes of forcing myself to exercise more (spoiler: it didn't work)",
+      "A Flutter app that generates a random workout from a list of exercises",
     date: "Summer 2020",
     imageSrc: exercisePreview,
     altText:
-      "'Ready to work out today?' header with a button that says Grind NEVER stops with copious amounts of emojis",
+      "Screenshot of app showing 'Ready to work out today?' header with a button that says 'Grind NEVER stops' with many emojis",
     links: [
       {
         name: "GitHub",
         url: "https://github.com/helenxuyang/exercise_generator",
       },
     ],
+    technologies: ["Flutter", "Firestore"],
   },
   {
     name: "Ins & Outs",
     description:
-      "A Flutter app for tracking food and symptoms to help with identifying possible food intolerances. Unfinished, but I hope to continue working on it!",
+      "A Flutter app for tracking food and symptoms to help with identifying possible food intolerances. Unfinished, but I hope to continue working on it someday!",
     date: "Summer 2020",
     imageSrc: insAndOutsPreview,
-    altText: "Card showing a lunch of watermelon, ramen, and green beans",
+    altText:
+      "Screenshot of app showing a lunch of watermelon, ramen, and green beans",
     links: [
       {
         name: "GitHub",
         url: "https://github.com/helenxuyang/ins-and-outs",
       },
     ],
+    technologies: ["Flutter", "Firestore"],
   },
 ];
 
@@ -269,13 +313,15 @@ export const hsProjects: Project[] = [
       "AOOD partner project: an RPG full of puns with a self-aware name and my questionable pixel art",
     date: "Spring 2019",
     imageSrc: badrpgPreview,
-    altText: "A character standing in front of two houses",
+    altText:
+      "A screenshot of BadRPG game showing character standing in front of two houses",
     links: [
       {
         name: "GitHub",
         url: "https://github.com/helenxuyang/BadRPG/",
       },
     ],
+    technologies: ["Java"],
   },
   {
     name: "Sudoku",
@@ -290,9 +336,10 @@ export const hsProjects: Project[] = [
         url: "https://github.com/helenxuyang/Sudoku",
       },
     ],
+    technologies: ["Java"],
   },
   {
-    name: "Tetris",
+    name: "Multiplayer Tetris",
     description:
       "CSA partner project: a Tetris game with single-player sprint/marathon and 2-player race/battle modes",
     date: "Spring 2018",
@@ -304,6 +351,7 @@ export const hsProjects: Project[] = [
         url: "https://github.com/helenxuyang/Tetris",
       },
     ],
+    technologies: ["Java"],
   },
   {
     name: "Rummikub",
@@ -311,12 +359,13 @@ export const hsProjects: Project[] = [
       "CSA picture project: a recreation of the board game Rummikub, created from a base project with mouse click position and image display features",
     date: "Fall-Winter 2018",
     imageSrc: rummikubPreview,
-    altText: "A grid with number tiles",
+    altText: "A Rummikub grid with number tiles",
     links: [
       {
         name: "GitHub",
         url: "https://github.com/helenxuyang/Rummikub",
       },
     ],
+    technologies: ["Java"],
   },
 ];

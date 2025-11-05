@@ -24,6 +24,7 @@ function App() {
       <StyledMain>
         <NavigationTabs />
       </StyledMain>
+      <div id="image-modal-container" />
     </>
   );
 }

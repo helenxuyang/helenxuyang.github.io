@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { ProjectCard } from "./ProjectCard";
 import type { Project } from "./projectTypes";
-import { SMALL_BREAKPOINT } from "./mediaQueries";
+import { MEDIUM_BREAKPOINT, SMALL_BREAKPOINT } from "./mediaQueries";
 
 type Props = {
   name: string;
@@ -12,6 +12,10 @@ const StyledProjectsHolder = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 8px;
+
+  ${MEDIUM_BREAKPOINT} {
+    grid-template-columns: repeat(2, 1fr);
+  }
 
   ${SMALL_BREAKPOINT} {
     display: flex;
