@@ -3,6 +3,7 @@ import { About } from "./About";
 import styled from "styled-components";
 import { Projects } from "./Projects";
 import { COLOR_PRIMARY } from "./colors";
+import { Resume } from "./Resume";
 
 type Tab = {
   name: string;
@@ -20,7 +21,7 @@ const TABS: Tab[] = [
   },
   {
     name: "Resume",
-    panelContent: <div />,
+    panelContent: <Resume />,
   },
 ];
 
