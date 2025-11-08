@@ -51,8 +51,6 @@ const StyledHeadline = styled.strong`
   color: ${COLOR_PRIMARY};
 `;
 
-const StyledDescription = styled.p``;
-
 export const Timeline = ({ title, titleHeadingLevel, items }: Props) => {
   const TitleHeading = `h${titleHeadingLevel}` as keyof JSX.IntrinsicElements;
   const ItemHeading = `h${
@@ -69,7 +67,7 @@ export const Timeline = ({ title, titleHeadingLevel, items }: Props) => {
               {name} <i>({date})</i>
             </ItemHeading>
             {headline && <StyledHeadline>{headline}</StyledHeadline>}
-            <StyledDescription>{description}</StyledDescription>
+            <p>{description}</p>
           </StyledItem>
         ))}
       </StyledTimeline>

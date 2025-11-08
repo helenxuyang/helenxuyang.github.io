@@ -4,6 +4,7 @@ import styled from "styled-components";
 import { Projects } from "./Projects";
 import { COLOR_PRIMARY } from "./colors";
 import { Resume } from "./Resume";
+import { SMALL_BREAKPOINT } from "./mediaQueries";
 
 type Tab = {
   name: string;
@@ -31,6 +32,10 @@ const getTabId = (tabName: string) =>
 const StyledTabButtonHolder = styled.div`
   display: flex;
   gap: 16px;
+
+  ${SMALL_BREAKPOINT} {
+    gap: 8px;
+  }
 `;
 
 const StyledTabButton = styled.button<{ $isCurrent: boolean }>`
@@ -52,6 +57,10 @@ const StyledTabButton = styled.button<{ $isCurrent: boolean }>`
 const StyledTabPanel = styled.div`
   border: 3px solid ${COLOR_PRIMARY};
   padding: 16px;
+
+  ${SMALL_BREAKPOINT} {
+    padding: 8px;
+  }
 `;
 
 export const NavigationTabs = () => {

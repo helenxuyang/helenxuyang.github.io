@@ -13,7 +13,7 @@ const StyledMain = styled.main`
   padding: 24px;
 
   @media (max-width: 600px) {
-    padding: 16px;
+    padding: 8px;
   }
 `;
 

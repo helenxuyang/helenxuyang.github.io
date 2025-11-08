@@ -15,6 +15,7 @@ import hobby_puzzling from "./assets/images/hobby_puzzling_ca_2024.jpg";
 import hobby_cards from "./assets/images/hobby_cards.png";
 import hobby_cooking from "./assets/images/hobby_cooking.jpg";
 import { COLOR_PRIMARY, COLOR_SECONDARY } from "./colors";
+import { SMALL_BREAKPOINT } from "./mediaQueries";
 
 const StyledContainer = styled.div`
   h2 {
@@ -54,6 +55,11 @@ const StyledContainer = styled.div`
 const StyledAbout = styled.div`
   display: flex;
   gap: 24px;
+
+  ${SMALL_BREAKPOINT} {
+    flex-direction: column;
+    gap: 4px;
+  }
 `;
 
 const StyledProfile = styled.img`
@@ -63,7 +69,8 @@ const StyledProfile = styled.img`
   border: 4px solid ${COLOR_PRIMARY};
 `;
 
-const ProfileLinks = styled.ul`
+const StyledLinks = styled.ul`
+  margin: 0;
   padding: 0;
   display: flex;
   gap: 12px;
@@ -84,7 +91,7 @@ const ProfileLinks = styled.ul`
   }
 `;
 
-const ExperienceSection = styled.div`
+const StyledExperience = styled.div`
   line-height: 1.5;
 
   ul {
@@ -100,6 +107,12 @@ const ExperienceSection = styled.div`
   }
 `;
 
+const StyledHobbies = styled.div`
+  ul {
+    padding-inline-start: 16px;
+  }
+`;
+
 const StyledImages = styled.div`
   display: flex;
   flex-wrap: wrap;
@@ -109,7 +122,8 @@ const StyledImages = styled.div`
   }
 
   img {
-    width: 300px;
+    width: 100%;
+    max-width: 300px;
   }
 `;
 
@@ -149,7 +163,7 @@ export const About = () => {
             Hi, I'm Helen! I'm a frontend dev interested in creating useful,
             fun, and accessible tech.
           </p>
-          <ProfileLinks>
+          <StyledLinks>
             <li>
               <a href="https://www.linkedin.com/in/helenxuyang/">
                 <img src={linkedinIcon} alt="LinkedIn profile" />
@@ -160,10 +174,10 @@ export const About = () => {
                 <img src={githubIcon} alt="GitHub profile" />
               </a>
             </li>
-          </ProfileLinks>
+          </StyledLinks>
         </div>
       </StyledAbout>
-      <ExperienceSection>
+      <StyledExperience>
         <h2>Experience</h2>
         <h3>Used professionally:</h3>
         <ul>
@@ -198,27 +212,30 @@ export const About = () => {
             <IconPill name="NextJS (TypeScript)" iconSrc={nextJSIcon} />
           </li>
         </ul>
-      </ExperienceSection>
+      </StyledExperience>
       <Timeline title="History" titleHeadingLevel={2} items={timelineItems} />
-      <h2>Hobbies</h2>
-      <ul>
-        <li>
-          🤟 <strong>American Sign Language:</strong> I took ASL 1 and 2 in
-          college (my favorite classes!) and am hoping to keep learning after
-          graduating.
-        </li>
-        <li>
-          🧩 <strong>Speed puzzling:</strong> I've always loved jigsaw puzzles,
-          recently I've started trying to do them fast but am still very slow
-        </li>
-        <li>
-          ✂️ <strong>Papercraft/cardmaking:</strong> I often make cards out of
-          paper for holidays and birthdays!
-        </li>
-        <li>
-          🍚 <strong>Cooking:</strong> I enjoy cooking and love to eat!
-        </li>
-      </ul>
+      <StyledHobbies>
+        <h2>Hobbies</h2>
+        <ul>
+          <li>
+            🤟 <strong>American Sign Language:</strong> I took ASL 1 and 2 in
+            college (my favorite classes!) and am hoping to keep learning after
+            graduating.
+          </li>
+          <li>
+            🧩 <strong>Speed puzzling:</strong> I've always loved jigsaw
+            puzzles, recently I've started trying to do them fast but am still
+            very slow
+          </li>
+          <li>
+            ✂️ <strong>Papercraft/cardmaking:</strong> I often make cards out of
+            paper for holidays and birthdays!
+          </li>
+          <li>
+            🍚 <strong>Cooking:</strong> I enjoy cooking and love to eat!
+          </li>
+        </ul>
+      </StyledHobbies>
       <StyledImages>
         <figure>
           <img

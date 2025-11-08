@@ -3,6 +3,7 @@ import type { Project } from "./projectTypes";
 import { COLOR_PRIMARY, COLOR_SECONDARY } from "./colors";
 import { useRef } from "react";
 import { ImageModal } from "./ImageModal";
+import { SMALL_BREAKPOINT } from "./mediaQueries";
 
 const StyledCard = styled.div`
   display: flex;
@@ -32,21 +33,6 @@ const StyledImage = styled.img`
   object-fit: contain;
 `;
 
-// const StyledEnlargeButton = styled.button`
-//   align-self: flex-end;
-//   background-color: unset;
-//   margin: 4px;
-//   padding: 4px;
-//   border: 2px solid ${COLOR_SECONDARY};
-//   border-radius: 50%;
-//   width: 24px;
-//   height: 24px;
-//   cursor: pointer;
-//   &:hover {
-//     transform: scale(1.05);
-//   }
-// `;
-
 const StyledContent = styled.div`
   padding: 16px;
 `;
@@ -75,6 +61,10 @@ const StyledTech = styled.span`
 const StyledDetails = styled.details`
   padding-bottom: 16px;
 
+  ${SMALL_BREAKPOINT} {
+    padding-bottom: 2px;
+  }
+
   summary {
     cursor: pointer;
     padding: 4px;
@@ -96,6 +86,10 @@ const StyledLinks = styled.div`
     &:hover {
       text-decoration: underline wavy;
     }
+  }
+
+  ${SMALL_BREAKPOINT} {
+    gap: 4px;
   }
 `;
 
