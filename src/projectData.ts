@@ -16,11 +16,41 @@ import shefPreview from "./assets/images/preview_shef.png";
 import exerciseBingoPreview from "./assets/images/preview_exercise_bingo.png";
 import sciolyMatcherPreview from "./assets/images/preview_scioly_matcher.png";
 import avianTelemetryPreview from "./assets/images/preview_avian_telem.png";
+import avianTelemetryReactPreview from "./assets/images/preview_avian_telem_react.png";
+
 import scavengerWalkPreview from "./assets/images/preview_scavenger_walk.png";
 
 import type { Project } from "./projectTypes";
 
 export const recentPersonalProjects: Project[] = [
+  {
+    name: "Colossal Avian Telemetry GUI",
+    description: [
+      "React-based telemetry GUI for Colossal Avian, a 30lb combat robot",
+      "My partner Matthew, builder and driver of Colossal Avian, asked me to build a GUI for their robot's telemetry system.",
+      "I receive data from the telemetry board via WebSocket, write it to a CSV using the FileSystem API in a Web Worker, and display the data live to inform the drivers of the robot status live during fights.",
+      "The app can also import and plot data (using React Apache ECharts) from previously recorded CSV files to help with analyzing match data.",
+      "Future plans: I have a whole Trello board for improvements and feature requests from the Colossal Avian team!",
+    ],
+    date: "March 2026 - Present",
+    imageSrc: avianTelemetryReactPreview,
+    altText:
+      "Colossal Avian telemetry GUI showing temperature, RPM, current, and consumption",
+    links: [
+      {
+        name: "GitHub",
+        url: "https://github.com/helenxuyang/colossal_avian_telemetry",
+      },
+      {
+        name: "Colossal Avian",
+        url: "https://mjzhang4.github.io/colossalavian.html",
+      },
+      {
+        name: "Telemetry System",
+        url: "https://mjzhang4.github.io/doc/ECE%20395%20Final%20Report.pdf",
+      },
+    ],
+  },
   {
     name: "Scavenger Walk",
     description: [
@@ -90,16 +120,16 @@ export const recentPersonalProjects: Project[] = [
     technologies: ["React", "TypeScript"],
   },
   {
-    name: "Colossal Avian Telemetry GUI",
+    name: "Colossal Avian Telemetry GUI (Python)",
     description: [
-      "Telemetry GUI for Colossal Avian, a 30lb combat robot",
-      "My partner Matthew, builder and driver of Colossal Avian, asked me to build a GUI for their robot's telemetry system. The latest iteration uses a custom extension of the progress bar component for an intuitive UI that can be understood amidst chaotic robot fighting.",
-      "Future plans: I'm hoping to keep improving the UX and add a feature to import and view previous data.",
+      "Python-based telemetry GUI for Colossal Avian, a 30lb combat robot",
+      "My partner Matthew, builder and driver of Colossal Avian, asked me to build a GUI for their robot's telemetry system. I used PyQT with a custom extension of the progress bar component for an intuitive UI that can be understood amidst chaotic robot fighting.",
+      "Future plans: Matthew created a new iteration of the telemetry board using ESP8266 which can communicate over wifi, so we decided to recreate the GUI with web technologies, which I'm more comfortable with and could customize more easily.",
     ],
     date: "April 2024",
     imageSrc: avianTelemetryPreview,
     altText:
-      "Colossal Avian telemetry GUI showing temperature, RPM, current, and consumption",
+      "Colossal Avian telemetry GUI showing temperature, RPM, current, and consumption for the robot's weapon system",
     links: [
       {
         name: "GitHub",
