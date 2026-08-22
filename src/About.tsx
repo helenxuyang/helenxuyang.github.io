@@ -158,7 +158,7 @@ export const About = () => {
       <StyledAbout>
         <StyledProfile src={profile} alt="Headshot of Helen Yang" width="200" />
         <div>
-          <h2>About Me</h2>
+          <h2>About</h2>
           <p>
             Hi, I'm Helen! I'm a frontend dev interested in creating useful,
             fun, and accessible tech.

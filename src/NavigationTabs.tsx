@@ -13,7 +13,7 @@ type Tab = {
 
 const TABS: Tab[] = [
   {
-    name: "About Me",
+    name: "About",
     panelContent: <About />,
   },
   {
@@ -31,10 +31,11 @@ const getTabId = (tabName: string) =>
 
 const StyledTabButtonHolder = styled.div`
   display: flex;
-  gap: 16px;
+  gap: 8px;
 
   ${SMALL_BREAKPOINT} {
-    gap: 8px;
+    gap: 0;
+    flex-direction: column;
   }
 `;
 
@@ -44,18 +45,23 @@ const StyledTabButton = styled.button<{ $isCurrent: boolean }>`
   font-size: 16px;
   color: ${(props) => (props.$isCurrent ? "white" : COLOR_PRIMARY)};
   border: 3px solid ${COLOR_PRIMARY};
-  border-bottom: none;
-  padding: 8px;
-  text-decoration: ${(props) => (props.$isCurrent ? "underline" : "none")};
+  padding: 12px 16px;
+  margin-bottom: 8px;
+  border-radius: 8px;
+  text-decoration: ${(props) => (props.$isCurrent ? "underline wavy" : "none")};
   cursor: pointer;
 
   &:hover {
-    text-decoration: underline wavy;
+    text-decoration: underline;
+  }
+
+  ${SMALL_BREAKPOINT} {
   }
 `;
 
 const StyledTabPanel = styled.div`
   border: 3px solid ${COLOR_PRIMARY};
+  border-radius: 8px;
   padding: 16px;
 
   ${SMALL_BREAKPOINT} {
