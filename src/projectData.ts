@@ -13,33 +13,30 @@ import scribePreview from "./assets/images/preview_scribe.jpg";
 import plumePreview from "./assets/images/preview_plume.png";
 import linkedPreview from "./assets/images/preview_linked.png";
 import shefPreview from "./assets/images/preview_shef.png";
-import exerciseBingoPreview from "./assets/images/preview_exercise_bingo.png";
 import sciolyMatcherPreview from "./assets/images/preview_scioly_matcher.png";
-import avianTelemetryPreview from "./assets/images/preview_avian_telem.png";
 import avianTelemetryReactPreview from "./assets/images/preview_avian_telem_react.png";
-
-import scavengerWalkPreview from "./assets/images/preview_scavenger_walk.png";
 
 import type { Project } from "./projectTypes";
 
 export const recentPersonalProjects: Project[] = [
   {
-    name: "Colossal Avian Telemetry GUI",
+    name: "Combot Robot Telemetry GUI (Tauri, React, Rust)",
     description: [
-      "React-based telemetry GUI for Colossal Avian, a 30lb combat robot",
-      "My partner Matthew, builder and driver of Colossal Avian, asked me to build a GUI for their robot's telemetry system.",
-      "I receive data from the telemetry board via WebSocket, write it to a CSV using the FileSystem API in a Web Worker, and display the data live to inform the drivers of the robot status live during fights.",
+      "Cross-platform Tauri app for combat robot data telemetry, built with React and Rust.",
+      "My partner Matthew, builder and driver of 30lb combat robot Colossal Avian, asked me to build a GUI for their robot's telemetry system.",
+      "I receive data from the telemetry board via serial, log it to a CSV, and display the data live to inform the drivers of the robot status live during fights.",
       "The app can also import and plot data (using React Apache ECharts) from previously recorded CSV files to help with analyzing match data.",
+      "Fun fact: this project has gone through multiple iterations from Python, to React, to Tauri with React and Rust. It's been challenging but fun to take my first steps as a Rustacean!",
       "Future plans: I have a whole Trello board for improvements and feature requests from the Colossal Avian team!",
     ],
-    date: "March 2026 - Present",
+    date: "April 2024 - Present",
     imageSrc: avianTelemetryReactPreview,
     altText:
       "Colossal Avian telemetry GUI showing temperature, RPM, current, and consumption",
     links: [
       {
         name: "GitHub",
-        url: "https://github.com/helenxuyang/colossal_avian_telemetry",
+        url: "https://github.com/helenxuyang/combot-telemetry",
       },
       {
         name: "Colossal Avian",
@@ -50,51 +47,7 @@ export const recentPersonalProjects: Project[] = [
         url: "https://mjzhang4.github.io/doc/ECE%20395%20Final%20Report.pdf",
       },
     ],
-  },
-  {
-    name: "Scavenger Walk",
-    description: [
-      "A simple web app that turns a walk into a scavenger hunt",
-      "I threw this together in an attempt to get myself to go touch grass. It's intended to be Wordle-style where you get a new board every day, and currently just uses local storage.",
-      "I plan to combine it with Exercise Bingo and other fitness activities into a larger project someday!",
-      "Future plans: Ideally I'd like this to work offline and potentially count steps or track distance walked as well, so I'm thinking about remaking it in a mobile project.",
-    ],
-    date: "July 2025",
-    imageSrc: scavengerWalkPreview,
-    altText: "A list of items to find on a scavenger hunt",
-    links: [
-      {
-        name: "GitHub",
-        url: "https://github.com/helenxuyang/scavenger-walk",
-      },
-      {
-        name: "Try it out!",
-        url: "https://scavenger-walk.vercel.app/",
-      },
-    ],
-    technologies: ["React", "TypeScript"],
-  },
-  {
-    name: "Exercise Bingo",
-    description: [
-      "A web app that gamifies exercising by turning a workout into a randomized bingo board",
-      "I created this in an attempt to get myself to exercise more. I plan to combine it with Scavenger Walk and other fitness activities into a larger project someday!",
-      "Future plans: I'd also like to make this more mobile-friendly...I haven't thought of a great way to fit an interactive 5x5 grid in a small viewport with good UX yet!",
-    ],
-    date: "June 2025",
-    imageSrc: exerciseBingoPreview,
-    altText: "A bingo board where each square is a different exercise",
-    links: [
-      {
-        name: "GitHub",
-        url: "https://github.com/helenxuyang/bingo-workout",
-      },
-      {
-        name: "Try it out!",
-        url: "https://bingo-workout.vercel.app/",
-      },
-    ],
-    technologies: ["React", "TypeScript"],
+    technologies: ["Tauri", "React", "Rust", "TypeScript"],
   },
   {
     name: "Science Olympiad Event Matcher",
@@ -112,39 +65,8 @@ export const recentPersonalProjects: Project[] = [
         name: "GitHub",
         url: "http://github.com/helenxuyang/scioly_event_matcher",
       },
-      {
-        name: "Try it out!",
-        url: "https://scioly-event-matcher.vercel.app/",
-      },
     ],
     technologies: ["React", "TypeScript"],
-  },
-  {
-    name: "Colossal Avian Telemetry GUI (Python)",
-    description: [
-      "Python-based telemetry GUI for Colossal Avian, a 30lb combat robot",
-      "My partner Matthew, builder and driver of Colossal Avian, asked me to build a GUI for their robot's telemetry system. I used PyQT with a custom extension of the progress bar component for an intuitive UI that can be understood amidst chaotic robot fighting.",
-      "Future plans: Matthew created a new iteration of the telemetry board using ESP8266 which can communicate over wifi, so we decided to recreate the GUI with web technologies, which I'm more comfortable with and could customize more easily.",
-    ],
-    date: "April 2024",
-    imageSrc: avianTelemetryPreview,
-    altText:
-      "Colossal Avian telemetry GUI showing temperature, RPM, current, and consumption for the robot's weapon system",
-    links: [
-      {
-        name: "GitHub",
-        url: "https://github.com/helenxuyang/avian_telemetry",
-      },
-      {
-        name: "Colossal Avian",
-        url: "https://mjzhang4.github.io/colossalavian.html",
-      },
-      {
-        name: "Telemetry System",
-        url: "https://mjzhang4.github.io/doc/ECE%20395%20Final%20Report.pdf",
-      },
-    ],
-    technologies: ["PYQT", "Python"],
   },
 ];
 
